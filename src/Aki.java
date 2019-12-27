@@ -365,11 +365,7 @@ public class Aki extends javax.swing.JFrame {
 
     private void linearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_linearButtonActionPerformed
         int Larr[] = newarray;
-        System.out.print("\n"+"LinearSearch Array -->");
-        for (int i = 0; i < Larr.length; i++) {
-           System.out.print(" "+Larr[i]);
-        }
-        System.out.print("\n");
+        System.out.printf("\n"+"LinearSearch Array --> : %s",Arrays.toString(Larr)+"\n");
         long starttime=System.nanoTime();
         
         int size = Larr.length;
@@ -404,12 +400,8 @@ public class Aki extends javax.swing.JFrame {
             }
         array = arr;
         newarray = arr.clone();
-        System.out.print("--------- "+"\n");
-        System.out.print("Random Array --> ");
-        for (int i = 0; i < arr.length; i++) {   
-            System.out.print(" "+arr[i]);
-        }
-        System.out.print("\n"+"--------- "+"\n");   
+        
+        System.out.printf("--------- "+"\n"+"Random Array --> : %s",Arrays.toString(arr)+"\n"+"--------- "+"\n");
     }//GEN-LAST:event_arrayButtonActionPerformed
 
     private void binaryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_binaryButtonActionPerformed
@@ -421,11 +413,7 @@ public class Aki extends javax.swing.JFrame {
         int fst = 0;
         int lst = Barr.length-1;
         Arrays.sort(Barr);
-        System.out.print("\n"+"BinarySearch Array -->");
-        for (int i = 0; i < Barr.length; i++) {
-           System.out.print(" "+Barr[i]);
-            }
-        System.out.print("\n");
+        System.out.printf("\n"+"BinarySearch Array --> : %s",Arrays.toString(Barr)+"\n");
         if ( Barr[fst] == Barr[lst] ) {
           if (Barr[fst] == key ) {
               binaryAnswer.setText((Integer.toString(0) ));
