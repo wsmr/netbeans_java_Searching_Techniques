@@ -403,7 +403,7 @@ public class Aki extends javax.swing.JFrame {
             arr[i] = rd.nextInt(100); // storing random integers in an array
             }
         array = arr;
-        newarray = arr;
+        newarray = arr.clone();
         System.out.print("--------- "+"\n");
         System.out.print("Random Array --> ");
         for (int i = 0; i < arr.length; i++) {   
