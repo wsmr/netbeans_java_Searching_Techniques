@@ -441,22 +441,22 @@ public class Aki extends javax.swing.JFrame {
         
     }//GEN-LAST:event_binaryButtonActionPerformed
   public static void binarySearch(int first, int last, int Barr[], int key, javax.swing.JTextField binaryAnswer) {
-     int mid = (first + last)/2;  
-   while( first <= last ){  
-      if ( Barr[mid] < key ){  
-        first = mid + 1;     
-      }else if ( Barr[mid] == key ){  
-        binaryAnswer.setText((Integer.toString(mid) ));  
-        break;  
-      }else{  
+    int mid = (first + last)/2;  
+    while( first <= last ){  
+        if ( Barr[mid] < key ){  
+            first = mid + 1;     
+        }else if ( Barr[mid] == key ){  
+                binaryAnswer.setText((Integer.toString(mid) ));  
+                break;  
+        }else{  
          last = mid - 1;  
-      }  
+        }  
       mid = (first + last)/2;  
-   }  
-   if ( first > last ){  
-      binaryAnswer.setText("not found");  
-   }
-    
+    }  
+    if ( first > last ){  
+        binaryAnswer.setText("not found");  
+    }
+
   }
     private void jumpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jumpButtonActionPerformed
       long starttime=System.nanoTime();
