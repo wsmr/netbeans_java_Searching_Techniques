@@ -370,7 +370,9 @@ public class Aki extends javax.swing.JFrame {
         
         int size = Larr.length;
         int value=Integer.valueOf(jTextFieldSearch.getText());
-        for (int i=0 ;i< size; i++){
+        String input = String.valueOf(value);
+        if ( input!="") {
+            for (int i=0 ;i< size; i++){
             if(Larr[i]==value){
             linearAnswer.setText((Integer.toString(i) ));
             break;
@@ -381,9 +383,10 @@ public class Aki extends javax.swing.JFrame {
         long result=endtime-starttime;
         //System.out.println(result);
         linearRuntime.setText((Long.toString(result) ));
- 
-
- 
+        }
+        else {
+            jTextFieldSearch.setText("ADD Here");
+        }
     }//GEN-LAST:event_linearButtonActionPerformed
 
     private void jTextFieldSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldSearchActionPerformed
